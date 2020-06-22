@@ -6,9 +6,15 @@
 
         <title>Laravel</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+        <!-- Scripts -->
+        <script src="{{ asset('js/app.js') }}" defer></script>
 
+        <!-- Fonts -->
+        <link rel="dns-prefetch" href="//fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+        <!-- Styles -->
+        <link href="{{ asset('css/app.css') }}" rel="stylesheet">
         <!-- Styles -->
         <style>
             html, body {
@@ -80,12 +86,17 @@
             @endif
 
             <div class="content">
-                <figure class="w-100">
-                    <img src="{{ asset('img/logo-v3.png')}}" alt="logo">
-                </figure>
-                <h1>
-                    Bienvenido, por favor logeate para ver los contadores de envasado
-                </h1>
+                <div class="row justify-content-center">
+                    <div class="col">
+                        <figure class="w-100">
+                            <img src="{{ asset('img/logo-v3.png')}}" class="card-img-bottom" alt="logo">
+                        </figure>
+                        <h2>
+                            Bienvenido, por favor logeate para ver los contadores de envasado
+                        </h2>
+                    </div>
+                </div>
+
             </div>
         </div>
     </body>
