@@ -10,7 +10,9 @@
     @foreach ($plantas as $item)
         <div class="col-3 m-2">
             <div class="card" style="width: 18rem;">
-                <img src="..." class="card-img-top" alt="...">
+                <figure class="w-100">
+                    <img src="{{ asset('img/planta-backus.jpg')}}" class="card-img-top" alt="logo">
+                </figure>
                 <div class="card-body">
                 <h5 class="card-title">{{ $item->nombre }}</h5>
                 <p class="card-text">Some quick example text to build on the card title and make up the bulk of the cards content.</p>

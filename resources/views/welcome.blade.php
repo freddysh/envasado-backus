@@ -84,7 +84,7 @@
                     <img src="{{ asset('img/logo-v3.png')}}" alt="logo">
                 </figure>
                 <h1>
-                    Bienvenido por favor logeate para ver los cotadores de envasado
+                    Bienvenido, por favor logeate para ver los contadores de envasado
                 </h1>
             </div>
         </div>
