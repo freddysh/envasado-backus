@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Marca;
 use App\Planta;
 use Illuminate\Http\Request;
 
@@ -30,6 +31,7 @@ class HomeController extends Controller
     public function show($id)
     {
         $plantas = Planta::with('envasados')->where('id', $id)->get()->first();
-        return view('envasados', compact('plantas'));
+        $marcas = Marca::get();
+        return view('envasados', compact('plantas', 'id', 'marcas'));
     }
 }

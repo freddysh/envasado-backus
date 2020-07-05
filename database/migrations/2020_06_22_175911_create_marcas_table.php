@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateEnvasadosTable extends Migration
+class CreateMarcasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateEnvasadosTable extends Migration
      */
     public function up()
     {
-        Schema::create('envasados', function (Blueprint $table) {
+        Schema::create('marcas', function (Blueprint $table) {
             $table->id();
-            $table->integer('contador');
-            $table->dateTime('fecha');
-            $table->bigInteger('marca_codigo');
-            $table->bigInteger('planta_id')->unsigned()->index();
-            $table->foreign('planta_id')->references('id')->on('plantas');
+            $table->string('codigo');
+            $table->string('marca_bebida');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateEnvasadosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('envasados');
+        Schema::dropIfExists('marcas');
     }
 }
