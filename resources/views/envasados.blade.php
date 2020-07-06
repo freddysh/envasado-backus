@@ -48,7 +48,7 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach ($plantas->envasados->SortByDesc('fecha') as $item)
+                                    @foreach ($plantas->envasados->SortByDesc('fecha')->take(1) as $item)
                                     <tr>
                                         <td>{{ $marcas->where('codigo',$item->marca_codigo)->first()->marca_bebida}}</td>
                                         <td>{{ $item->contador }}</td>
