@@ -17,16 +17,20 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-sm-6 col-md-8 col-lg-8">
+                        <div class="col-6">
                             <h2>
-                                {{ $plantas->nombre }} Listado de contadores
+                                {{ $plantas->nombre }}
                             </h2>
                         </div>
-                        <div class="col-sm-3 col-md-2 col-lg-2">
-                            <a class="btn btn-outline-primary" href="{{ route('envasados',$id) }}">Actualizar</a>
-                        </div>
-                        <div class="col-sm-3 col-md-2 col-lg-2">
-                            <a class="btn btn-outline-primary" href="{{ route('home') }}">Regresar</a>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col-6">
+                                    <a class="btn btn-primary" href="{{ route('envasados',$id) }}">Actualizar</a>
+                                </div>
+                                <div class="col-6">
+                                    <a class="btn btn-outline-primary" href="{{ route('home') }}">Regresar</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -43,7 +47,7 @@
                                 <thead>
                                     <tr>
                                         <th>Marca</th>
-                                        <th>Contador</th>
+                                        <th>Contador de Palet</th>
                                         <th>Fecha</th>
                                     </tr>
                                 </thead>
