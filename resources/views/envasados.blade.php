@@ -24,10 +24,10 @@
                         </div>
                         <div class="col-6">
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 text-right">
                                     <a class="btn btn-primary" href="{{ route('envasados',$id) }}">Actualizar</a>
                                 </div>
-                                <div class="col-6">
+                                <div class="col-6 text-left">
                                     <a class="btn btn-outline-primary" href="{{ route('home') }}">Regresar</a>
                                 </div>
                             </div>
